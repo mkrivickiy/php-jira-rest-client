@@ -819,6 +819,34 @@ try {
 
 ```
 
+#### Add issue watcher
+
+```php
+<?php
+require 'vendor/autoload.php';
+
+use JiraRestApi\Issue\IssueService;
+use JiraRestApi\Issue\Watcher;
+use JiraRestApi\JiraException;
+
+$issueKey = 'TEST-961';
+
+try {
+    $issueService = new IssueService();
+    
+    // get issue's all worklog
+    $watcher = new Watcher('lesstif');
+    var_dump($watcher);
+    
+    $wch = $issueService->addWatcher($issueKey, $watcher);
+    var_dump($wch);
+    
+} catch (JiraException $e) {
+    $this->assertTrue(false, 'testSearch Failed : '.$e->getMessage());
+}
+
+```
+
 #### Get User Info
 
 Returns a user.
