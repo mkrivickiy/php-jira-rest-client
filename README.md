@@ -113,7 +113,7 @@ $iss = new IssueService(new ArrayConfiguration(
 - [Add worklog in Issue](#add-worklog-in-issue)
 - [Edit worklog in Issue](#edit-worklog-in-issue)
 - [Get Issue worklog](#get-issue-worklog)
-- [Add watcher in Issue](#add-issue-watcher)
+- [Add watcher in Issue](#add-watcher-in-issue)
 
 ### User
 - [Get User Info](#get-user-info)
